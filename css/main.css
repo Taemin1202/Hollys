@@ -22,7 +22,7 @@
 
 .util{
     float: left;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .util li{
@@ -40,7 +40,7 @@
 
 .tmenu{
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .tmenu li{
@@ -62,7 +62,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 30px;
+    top: 15px;
 }
 
 .nav{
@@ -293,7 +293,8 @@
 }
 
 .cont03{
-
+    padding-bottom: 75px;
+    border-bottom: 2px solid crimson;
 }
 
 .cont03_list{
@@ -303,9 +304,184 @@
 
 .cont03_list > li{
     width: 24%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .cont03_list h3{
     margin-bottom: 10px;
+}
+
+.event_list{
+    
+}
+
+.event_list li{
+    line-height: 1.8;
+}
+
+.event_list li a{
+    float: left;
+    width: 70%;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.event_list li span{
+    float: right;
+}
+
+.b2b p{
+    line-height: 1.8;
+    text-align: justify;
+    /* word-spacing: -1%; */
+}
+
+.more{
+    margin-top: 5px;
+}
+
+.table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table td{
+    padding: 5px 0;
+}
+
+.col1{
+    width: 75%;
+    /* text-wrap: nowrap; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.col2{
+    width: 25%;
+    text-align: right;
+}
+
+.notice_list{
+    text-align: right;
+    padding-top: 10px;
+}
+
+.notice_list li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.notice_list li a{
+    display: block;
+}
+
+.notice_list li:first-child a{
+    border-right: dotted 1px gray;
+    padding-right: 20px;
+}
+
+.notice_list li span{
+    display: block;
+    font-size: 12px;
+    margin-top: 15px;
+    color: grey;
+}
+
+.notice_list li:first-child span{
+    padding-right: 20px;
+}
+
+.cont04{
+    margin-top: 50px;
+}
+
+.cont04 img{
+    vertical-align: middle !important;
+}
+
+/* <-----main inner 끝-----> */
+
+/* <-----footer 시작-----> */
+
+#footer{
+    background-color: crimson;
+    padding: 20px 0;
+}
+
+.foot_inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.f_menu{
+    color: ghostwhite;
+}
+
+.f_menu li{
+    float: left;
+}
+
+.f_menu li a{
+    display: block;
+    padding: 5px 10px;
+    position: relative;
+    font-size: 12px;
+}
+
+.f_menu li:first-child a{
+    padding-left: 0;
+}
+
+.f_menu li a::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: ghostwhite;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.f_menu li:last-child a::after{
+    display: none;
+}
+
+.address{
+    clear: both;
+    font-style: normal;
+    font-size: 10px;
+    color: #d88088;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.fix{
+    position: fixed;
+    z-index: 100;
+    left: calc(50% + 500px);
+    top: 50px;
+}
+
+.popup{
+    width: 500px;
+    height: 700px;
+    border: 10px solid crimson;
+    box-sizing: unset;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    z-index: 150;
+}
+
+.close{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    color: crimson;
+    border: none;
 }

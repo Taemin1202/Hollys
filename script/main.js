@@ -12,6 +12,11 @@ $(function(){
         autoplaySpeed:2000,
         dots:true,
         arrows:false,
-        adaptiveHeight:true
+        adaptiveHeight:true,
+        fade:true
+    })
+
+    $(".close").click(function(){
+        $(".popup").hide();
     })
 })/* jQ ends */
